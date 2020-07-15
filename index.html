@@ -30,10 +30,19 @@
             }
 
             .buscador{
-                border-radius: 12px;
-                border-style: groove;
-                
+                border-radius: 24px;
+                border-style: solid;
+                border-width: 1px;
+                padding: 5px, 8px, 0px, 14px;
+                width: 482px;
+                height: 44px;
+                border-color: #dfe1e5; 
             }
+
+            .buscador:hover{
+            box-shadow:0px 1px 6px 0px rgba(32,33, 36, 0.28);
+            }
+
             .panel-inferior{
             background-color:#f2f2f2;  
             line-height: 40px;
@@ -47,7 +56,6 @@
                 color: #5f6368;
                 font-family: arial;
                 font-size: 14px;
-                margin: 0px !important;
             }
             .borde-inf{
                 border-top-width: 1px;
@@ -61,29 +69,133 @@
             }
             .pie-lateral{
                 float: right;
-                padding-left: 27px;
+                padding-right: 27px;
                 color: #5f6368;
                 font-family: arial;
                 font-size: 14px;
-                margin: 0px !important;
+                
             }
             #footer{
                 position: absolute;
                 bottom: 0;
                 width: 100%;
             }
+            .botonera{
+                padding-top: 18px;
+                color: rgba(0,0,0,.54)
+            }
 
+            .boton-buscar{
+                background-color: #F2F2F2;
+                margin-top: 11px;
+                margin-right: 4px;
+                margin-bottom: 11px;
+                margin-left: 4px;
+                padding-top: 0px;
+                padding-right: 16px;
+                padding-bottom: 0px;
+                padding-left: 16px;  
+                font-size: 14px;
+                line-height: 27px;
+                border: 1px;
+                border-style:solid;
+                border-color: #f2f2f2;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                color: rgba(0,0,0,.54);
+                border-radius: 4px;
+            }
+            .boton-buscar:hover{
+                opacity: .75;
+                border: 0.2px solid;
+                color: #5F6368;
+               
+
+            }
+
+            .boton-lucky{
+                background-color: #F2F2F2;
+                margin-top: 11px;
+                margin-right: 4px;
+                margin-bottom: 11px;
+                margin-left: 4px;
+                padding-top: 0px;
+                padding-right: 16px;
+                padding-bottom: 0px;
+                padding-left: 16px;  
+                font-size: 14px;
+                line-height: 27px;
+                border: 1px;
+                border-style:solid;
+                border-color: #f2f2f2;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                color: rgba(0,0,0,.54);
+                border-radius: 4px;
+            }
+            .boton-lucky:hover{
+                opacity: .75;
+                border: 0.2px solid;
+                color: #5F6368;
+                
+            }
+            a:link{
+                text-decoration: none;
+            }
+            a:visited{
+            color:  #609;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+            a:active{
+                color:red
+            }
+          
+            .links-sup{
+                float:right;
+            }
+
+            .boton-iniciar-sesion{
+                background-color: #4285f4;
+                font-weight: bold;
+                color:white;
+                font-family: arial;
+                outline: none;
+                border: 1px;
+                border-style: solid;
+                line-height: 28px;
+                padding-top: 0px;
+                padding-right: 12px;
+                padding-bottom: 0px;
+                padding-left: 12px;
+                border-radius: 4px;
+                float: right;
+            }
+        
         </style>
 <title>Google</title>
     </head>
     <body>
+        <div>
+            <a class=links-sup href="#">Gmail</a>
+            <a class=links-sup href="#">Imagenes</a>
+            <button class=boton-iniciar-sesion type="button" >Iniciar Sesion</button>
+        </div>
         <div class=content>
         <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         <br>
         <input class="buscador"type="text" title="Buscar">
         <br>
-        <button type="submit">Buscar con Google</button> 
-        <button type="submit">Me siento con suerte</button>
+            <div class=botonera>
+                <button class=boton-buscar type="submit">Buscar con Google</button> 
+                <button class=boton-lucky type="submit">Me siento con suerte</button>
+            </div>
         </div>
 
         <div class="div-inferior">
